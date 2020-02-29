@@ -28,7 +28,8 @@ declare(strict_types=1); // soportados de 5.5 para arriva
 
 	//creamos una funcion y espicificamos que el primer parametro sea de tipo funcion(Closure) la cual al pasarle ya deve estar creada las funciones
 	function operacion(Closure $operacion, $num1, $num2){
-		echo "{$operacion($num1,$num2)}<br>";
+		// echo "{$operacion($num1,$num2)}<br>";
+		echo $operacion($num1, $num2);
 	}
 
 	$sumar = function($a,$b){
