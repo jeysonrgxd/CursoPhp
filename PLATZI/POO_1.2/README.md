@@ -8,11 +8,12 @@ Una principal característica de un ORM es que hace más transparente las conexi
 
 # Instalacion eloquent
 
-Ingresamos a la pagina [packagist](https://packagist.org/) luego buscamos ellumunate/database, despues procedemos a instalar con el comando ```` php composer.phar illuminate/database ``` luego tener encuenta los siguientes conceptos :
+Ingresamos a la pagina [packagist](https://packagist.org/) luego buscamos ellumunate/database, despues procedemos a instalar con el comando ``` php composer.phar illuminate/database ``` luego tener encuenta los siguientes conceptos :
 
 - Hay que crear una clase para relacionar objetos que bamos a utilizar en nuestra aplicacion en php con la tabla que estamos utilizando en mysql
 
-- Cuando utilizamos el ORM de Laravel debemos crear clases y que extiendan de Model que viene de eloquent ```` use Illuminate\Database\Eloquent\Model; ```
+- Cuando utilizamos el ORM de Laravel debemos crear clases y que extiendan de Model que viene de eloquent 
+``` use Illuminate\Database\Eloquent\Model; ```
 
 ## Patrones de diseño
 
