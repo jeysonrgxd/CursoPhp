@@ -1,0 +1,11 @@
+#inicializamos nuestro motor
+RewriteEngine On
+
+#creamos una condicion
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+
+#regla de redireccionamiento
+RewriteRule ^ %1 [L,NE,R=302]
+
+#regla para que cuando encuentre cualquier cosa nos mande a public (para la carpeta del proyecto que en este caso es /POO)
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]

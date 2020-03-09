@@ -1,0 +1,13 @@
+#inicializamos nuestro motor
+RewriteEngine On
+
+#---------agregamos una condicion -----------
+
+# si el archivo que estamos pidiendo no es un directorio entonses seguiemos probando
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#si el archivo que estamos pidiendo no es un archivo entonses seguiemos probando
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# si los dos de arriba no se cumplen entonses entra aqui y el cual hace es que todo lo que sea que venga lo bamos a mandar a index.php le pasamos dos parametros QSA : todo lo que mandemos se agrege al query string, L es la ultima
+RewriteRule ^ index.php [QSA,L]
